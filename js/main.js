@@ -48,7 +48,7 @@ form.addEventListener('submit', async (event) => {
       throw new Error('Request failed');
     }
   } catch (error) {
-    status.textContent = 'Something went wrong. Please try again, or email hello@thelengthclub.com.';
+    status.textContent = 'Something went wrong. Please try again, or email hi@length.club.';
     status.classList.add('is-error');
     button.disabled = false;
   }
