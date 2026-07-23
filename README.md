@@ -16,15 +16,29 @@ The form posts to [Formspree](https://formspree.io). Until it's connected, submi
 
 Submissions then arrive in your Formspree dashboard and email inbox.
 
-## Go live on GitHub Pages
+## Hosting & deployment
 
-1. Merge this branch into `main`.
-2. In the repo: **Settings → Pages → Source: "GitHub Actions"**.
-3. The `Deploy to GitHub Pages` workflow runs on every push to `main` and publishes the site at `https://<username>.github.io/thelengthclub/`.
+The site is served by GitHub Pages (**Settings → Pages → Source: "GitHub Actions"**). The `Deploy to GitHub Pages` workflow runs on every push to `main`.
 
-### Custom domain (later)
+## Custom domain: length.club
 
-In **Settings → Pages**, add your custom domain (e.g. `thelengthclub.com`) and follow GitHub's DNS instructions. GitHub creates a `CNAME` file automatically.
+The domain is registered at Infomaniak. To connect it:
+
+1. **DNS at Infomaniak** (Domain → DNS zone for `length.club`), add these records:
+
+   | Type  | Name / Source | Target |
+   |-------|---------------|--------|
+   | A     | `@` (apex)    | `185.199.108.153` |
+   | A     | `@` (apex)    | `185.199.109.153` |
+   | A     | `@` (apex)    | `185.199.110.153` |
+   | A     | `@` (apex)    | `185.199.111.153` |
+   | CNAME | `www`         | `aboutali.github.io.` |
+
+   Remove any conflicting default A/AAAA records Infomaniak put on `@` (e.g. a parking page or web redirect).
+
+2. **GitHub**: repo **Settings → Pages → Custom domain** → enter `length.club` → Save. Wait for the DNS check to pass (can take up to an hour while DNS propagates), then tick **Enforce HTTPS**.
+
+3. Done — the site serves at `https://length.club` and `www.length.club` redirects to it.
 
 ## Preview locally
 
