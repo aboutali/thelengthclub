@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TLC — profile picture</title>
+  <link rel="stylesheet" href="ig.css">
+  <style>
+    /* Instagram crops the avatar to a circle — everything important
+       stays well inside the inscribed circle. */
+    .frame { align-items: center; justify-content: center; }
+    .mark-big {
+      font-size: 360px;
+      font-weight: 700;
+      letter-spacing: -0.06em;
+      line-height: 1;
+      position: relative;
+      z-index: 1;
+      margin-left: -0.06em; /* optically recenter the tight tracking */
+    }
+    .rings { width: 940px; height: 940px; top: 70px; left: 70px; opacity: 0.35; }
+  </style>
+</head>
+<body class="square">
+  <div class="frame bg-orange">
+    <svg class="motif rings" viewBox="0 0 200 200" aria-hidden="true">
+      <g fill="none" stroke="#F1EBE1" stroke-width="0.8">
+        <circle cx="100" cy="100" r="18"/>
+        <circle cx="100" cy="100" r="33"/>
+        <circle cx="100" cy="100" r="48"/>
+        <circle cx="100" cy="100" r="63"/>
+        <circle cx="100" cy="100" r="78"/>
+        <circle cx="100" cy="100" r="93"/>
+      </g>
+    </svg>
+    <div class="mark-big">TLC</div>
+  </div>
+</body>
+</html>
