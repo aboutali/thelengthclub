@@ -1,0 +1,247 @@
+/* ============================================================
+   The Length Club — pilot booking page
+   Small additions on top of ../css/styles.css
+   ============================================================ */
+
+[hidden] { display: none !important; }
+
+/* ---- Language toggle ---- */
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.2rem;
+  border: 1px solid rgba(20, 20, 20, 0.25);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.lang-sep { opacity: 0.35; }
+
+.lang-btn {
+  min-width: 2.75rem;
+  min-height: 2.25rem;
+  padding: 0.3rem 0.7rem;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: 0.04em;
+  color: var(--color-ink);
+  background: none;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.lang-btn[aria-pressed="true"] {
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
+.lang-btn:focus-visible {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 2px;
+}
+
+/* ---- Intro ---- */
+
+.book-intro { padding-block: clamp(2.5rem, 7vw, 4.5rem); }
+
+.book-intro h1 {
+  font-size: clamp(2.2rem, 7vw, 4.25rem);
+  overflow-wrap: break-word;
+  margin-bottom: 1.25rem;
+}
+
+.book-meta {
+  display: grid;
+  gap: 1.25rem 2rem;
+  margin: 2.25rem 0 0;
+}
+
+@media (min-width: 700px) {
+  .book-meta { grid-template-columns: repeat(3, 1fr); }
+}
+
+.book-meta-item {
+  border-top: 1px solid rgba(20, 20, 20, 0.3);
+  padding-top: 0.9rem;
+}
+
+.book-meta dt {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 0.3rem;
+}
+
+.book-meta dd {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* ---- What to expect ---- */
+
+.expect-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+
+.expect-list li {
+  display: flex;
+  gap: 1.25rem;
+  padding-block: 1.1rem;
+  border-top: 1px solid rgba(241, 235, 225, 0.45);
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.expect-list li:last-child { border-bottom: 1px solid rgba(241, 235, 225, 0.45); }
+
+.expect-num {
+  flex-shrink: 0;
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+/* ---- Card ---- */
+
+.book-closed { padding-bottom: var(--section-pad); }
+
+.book-closed .book-card { max-width: 40rem; }
+
+.book-card-title {
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+
+/* ---- Slot picker ---- */
+
+.slot-group {
+  min-width: 0;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  border: 0;
+}
+
+.slot-group legend {
+  padding: 0;
+  margin-bottom: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4.75rem, 1fr));
+  gap: 0.5rem;
+}
+
+.slot { position: relative; }
+
+.slot input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.slot label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  background: #FFFFFF;
+  border: 1px solid rgba(20, 20, 20, 0.25);
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.slot input:hover + label { border-color: var(--color-ink); }
+
+.slot input:checked + label {
+  background: var(--color-ink);
+  border-color: var(--color-ink);
+  color: var(--color-cream);
+}
+
+.slot input:focus-visible + label {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 2px;
+}
+
+/* ---- Checkboxes ---- */
+
+.form-check-wrap { margin-bottom: 1.25rem; }
+
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.form-check input {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0.1rem 0 0;
+  accent-color: var(--color-ink);
+  cursor: pointer;
+}
+
+.form-check input:focus-visible {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 2px;
+}
+
+/* ---- Inline errors ---- */
+
+.field-error {
+  margin: 0.4rem 0 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #B3361A;
+}
+
+.field-error:empty { display: none; }
+
+.form-field input[aria-invalid="true"] { border-color: #B3361A; }
+
+.form-check input[aria-invalid="true"] { outline: 2px solid #B3361A; outline-offset: 2px; }
+
+.slot input[aria-invalid="true"] + label { border-color: #B3361A; }
+
+/* ---- Success ---- */
+
+.book-success:focus { outline: none; }
+
+.book-success p:last-child { margin: 0; }
+
+.form-status.is-error,
+.book-intro .form-status.is-error { color: #B3361A; }
+
+.form-success { margin-bottom: 0.75rem; }
+
+.form-check-wrap .field-error { margin: -0.4rem 0 0.9rem 2rem; }
+
+.book-closed .book-card { background: var(--color-cream-2); }

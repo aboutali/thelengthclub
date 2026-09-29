@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a stretch slot — The Length Club</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="book.css">
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="https://length.club/" data-i18n-label="logo_label" aria-label="The Length Club — home">
+        <span class="logo-mark">TLC</span>
+        <span class="logo-text">The<br>Length<br>Club</span>
+      </a>
+      <div class="lang-toggle" role="group" aria-label="Language / Sprache">
+        <button type="button" class="lang-btn" data-lang="de" lang="de" aria-pressed="false">DE</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="true">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Intro -->
+    <section class="book-intro">
+      <div class="container">
+        <p class="eyebrow" data-i18n="eyebrow">Pilot day</p>
+        <h1 id="book-title">Stretch day at …</h1>
+        <p class="lead" data-i18n="lead">Assisted stretching at your office. A practitioner stretches you on a portable table.</p>
+        <dl class="book-meta">
+          <div class="book-meta-item">
+            <dt data-i18n="meta_date">Date</dt>
+            <dd id="meta-date"></dd>
+          </div>
+          <div class="book-meta-item">
+            <dt data-i18n="meta_place">Room</dt>
+            <dd id="meta-place"></dd>
+          </div>
+          <div class="book-meta-item">
+            <dt data-i18n="meta_length">Slot length</dt>
+            <dd id="meta-length"></dd>
+          </div>
+        </dl>
+        <noscript><p class="form-status is-error">Please turn on JavaScript to book a slot. / Bitte aktiviere JavaScript, um einen Slot zu buchen.</p></noscript>
+      </div>
+    </section>
+
+    <!-- Closed -->
+    <section class="book-closed" id="book-closed" hidden>
+      <div class="container">
+        <div class="waitlist-form book-card">
+          <h2 class="book-card-title" data-i18n="closed_title">Booking is closed</h2>
+          <p data-i18n="closed_text">Booking is not open right now. Questions? Write to hi@length.club.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="waitlist book-main" id="book-main">
+      <div class="container waitlist-inner">
+        <div class="waitlist-copy">
+          <h2 data-i18n="expect_title">What to expect</h2>
+          <ol class="expect-list" role="list">
+            <li><span class="expect-num" aria-hidden="true">01</span><span data-i18n="expect_1">You stay in your clothes. No oil, no changing.</span></li>
+            <li><span class="expect-num" aria-hidden="true">02</span><span data-i18n="expect_2">You do not need to be flexible. The practitioner adapts every stretch to you.</span></li>
+            <li><span class="expect-num" aria-hidden="true">03</span><span data-i18n="expect_3">Arrive 2 minutes early.</span></li>
+          </ol>
+        </div>
+
+        <div class="waitlist-form book-card">
+          <form id="booking-form" action="https://formspree.io/f/mjgnenzb" method="POST" novalidate>
+            <h2 class="book-card-title" data-i18n="form_title">Choose your slot</h2>
+            <p class="field-error" id="err-slot" data-error-for="slot"></p>
+            <div id="slot-groups"></div>
+
+            <div class="form-field">
+              <label for="bk-name" data-i18n="label_name">Name</label>
+              <input id="bk-name" type="text" name="name" required autocomplete="name" aria-describedby="err-name" data-i18n-placeholder="ph_name" placeholder="Your name">
+              <p class="field-error" id="err-name" data-error-for="name"></p>
+            </div>
+            <div class="form-field">
+              <label for="bk-email" data-i18n="label_email">Work email</label>
+              <input id="bk-email" type="email" name="email" required autocomplete="email" aria-describedby="err-email" data-i18n-placeholder="ph_email" placeholder="you@company.com">
+              <p class="field-error" id="err-email" data-error-for="email"></p>
+            </div>
+
+            <div class="form-check-wrap">
+              <label class="form-check">
+                <input id="bk-ack" type="checkbox" name="injury_ack" value="yes" required aria-describedby="err-ack">
+                <span data-i18n="label_ack">I will tell the practitioner about injuries, pregnancy or recent surgery before the session.</span>
+              </label>
+              <p class="field-error" id="err-ack" data-error-for="ack"></p>
+              <label class="form-check">
+                <input id="bk-optin" type="checkbox" name="waitlist_optin" value="yes">
+                <span data-i18n="label_optin">Keep me updated about the studio opening.</span>
+              </label>
+            </div>
+
+            <input type="hidden" name="_subject" id="bk-subject" value="">
+            <input type="hidden" name="form" value="pilot-booking">
+            <input type="hidden" name="company" id="bk-company" value="">
+            <input type="hidden" name="date" id="bk-date" value="">
+            <input type="hidden" name="slot" id="bk-slot" value="">
+            <input type="hidden" name="lang" id="bk-lang" value="en">
+            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <button class="btn btn-ink btn-full" type="submit" data-i18n="submit">Request this slot</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <p class="form-fineprint" data-i18n="privacy">We use your details only to organise the session. Your employer receives no individual data.</p>
+          </form>
+
+          <div class="book-success" id="book-success" tabindex="-1" hidden>
+            <p class="form-success" id="success-title"></p>
+            <p id="success-text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="mailto:hi@length.club">hi@length.club</a>
+        <p>© 2026 The Length Club · Zürich</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="book.js"></script>
+</body>
+</html>
