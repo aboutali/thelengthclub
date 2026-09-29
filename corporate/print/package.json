@@ -1,0 +1,13 @@
+{
+  "name": "thelengthclub-corporate-print",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Print collateral for The Length Club office pilot (PDF + PNG preview).",
+  "scripts": {
+    "build": "node generate.js"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "qrcode": "^1.5.4"
+  }
+}

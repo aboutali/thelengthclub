@@ -40,6 +40,24 @@ The domain is registered at Infomaniak. To connect it:
 
 3. Done — the site serves at `https://length.club` and `www.length.club` redirects to it.
 
+## Pilot booking page (/book/)
+
+`https://length.club/book/` is a bilingual (DE/EN) page where employees of a pilot company scan a QR code from an office poster and request a stretch slot. It is not linked from the landing page and carries `noindex`. Requests go to the same Formspree form as the waitlist, marked with `form: pilot-booking`. Each request carries these fields: `_subject` ("Pilot booking – {company}"), `company`, `date`, `slot`, `lang`, `name`, `email`, `injury_ack` and `waitlist_optin`. The page collects no health details.
+
+**Set up a new company:** edit `book/config.js` (every field has a comment) and commit.
+
+| Field | Meaning |
+|-------|---------|
+| `open` | `true` shows the form. `false` shows "Booking is closed". |
+| `company` | Name in the headline and the email subject. |
+| `location` | Building, floor and room. |
+| `slotMinutes` | Length of each slot. End times are calculated from it. |
+| `days` | One entry per day: `date` (`YYYY-MM-DD`) and `slots` (start times, `"HH:MM"`). |
+
+Change the company, dates and slot times in `book/config.js`. All page texts are in the `STRINGS` dictionary at the top of `book/book.js`.
+
+**Limitation:** a static page cannot hide slots that others already took. Two people can request the same slot. The team confirms each request by email and offers another slot when needed. Set `open: false` once the day is full.
+
 ## Infomaniak MCP servers (Claude Code)
 
 `.mcp.json` connects Claude Code to the Infomaniak suite through the official [Infomaniak MCP servers](https://github.com/orgs/Infomaniak/repositories?q=mcp). All five servers share one Infomaniak API token. Claude Code reads the token from an environment variable. Never commit the token.
@@ -82,6 +100,10 @@ python3 -m http.server 8000
 index.html                   — the entire page
 css/styles.css               — styles (brand tokens as CSS custom properties)
 js/main.js                   — mobile nav, waitlist form, scroll reveal
+book/index.html              — pilot booking page (/book/)
+book/config.js               — per-company settings for the booking page
+book/book.js                 — booking page logic and DE/EN strings
+book/book.css                — booking page additions to css/styles.css
 favicon.svg                  — TLC favicon
 .mcp.json                    — Infomaniak MCP servers for Claude Code
 .github/workflows/deploy.yml — GitHub Pages deployment
