@@ -42,25 +42,32 @@ The domain is registered at Infomaniak. To connect it:
 
 ## Infomaniak MCP servers (Claude Code)
 
-`.mcp.json` connects Claude Code to the Infomaniak suite through the official [Infomaniak MCP servers](https://github.com/orgs/Infomaniak/repositories?q=mcp). Claude Code reads the tokens from environment variables. Never commit a token.
+`.mcp.json` connects Claude Code to the Infomaniak suite through the official [Infomaniak MCP servers](https://github.com/orgs/Infomaniak/repositories?q=mcp). All five servers share one Infomaniak API token. Claude Code reads the token from an environment variable. Never commit the token.
 
-| Server     | npm package                       | Environment variables             | Token scopes                   |
-|------------|-----------------------------------|-----------------------------------|--------------------------------|
-| `kdrive`   | `@infomaniak/mcp-server-kdrive`   | `KDRIVE_TOKEN`, `KDRIVE_ID`       | `drive`                        |
-| `mail`     | `@infomaniak/mcp-server-mail`     | `MAIL_TOKEN`                      | `workspace:mail`               |
-| `calendar` | `@infomaniak/mcp-server-calendar` | `CALENDAR_TOKEN`                  | `workspace:calendar user_info` |
-| `contact`  | `@infomaniak/mcp-server-contact`  | `CONTACT_TOKEN`                   | `contacts`                     |
-| `kchat`    | `@infomaniak/mcp-server-kchat`    | `KCHAT_TOKEN`, `KCHAT_TEAM_NAME`  | `kchat`                        |
+| Server     | Infomaniak service | npm package                       |
+|------------|--------------------|-----------------------------------|
+| `kdrive`   | kDrive             | `@infomaniak/mcp-server-kdrive`   |
+| `mail`     | Mail               | `@infomaniak/mcp-server-mail`     |
+| `calendar` | Calendar           | `@infomaniak/mcp-server-calendar` |
+| `contact`  | Contacts           | `@infomaniak/mcp-server-contact`  |
+| `kchat`    | kChat              | `@infomaniak/mcp-server-kchat`    |
 
-1. Create one token per server in the Infomaniak Manager under **API token**. Select only the scopes from the table.
-2. Take `KDRIVE_ID` from the kDrive web app URL. It is the number after `/drive/`.
-3. Take `KCHAT_TEAM_NAME` from the kChat URL. It is the unique team name in the address.
-4. Set the variables:
-   - **Local:** export them in your shell profile, e.g. `export KDRIVE_TOKEN=…`.
+Claude Code needs three environment variables:
+
+| Variable            | Value                                                        |
+|---------------------|--------------------------------------------------------------|
+| `INFOMANIAK_TOKEN`  | The API token.                                               |
+| `KDRIVE_ID`         | The number after `/drive/` in the kDrive web app URL.        |
+| `KCHAT_TEAM_NAME`   | The unique team name in the kChat URL.                       |
+
+1. Create one token in the Infomaniak Manager under **API token**.
+2. Give the token these scopes: `drive`, `workspace:mail`, `workspace:calendar`, `user_info`, `contacts`, `kchat`.
+3. Set the variables:
+   - **Local:** export them in your shell profile, e.g. `export INFOMANIAK_TOKEN=…`.
    - **Claude Code on the web:** add them in the cloud environment settings (environment menu → Edit → environment variables).
-5. Start Claude Code in this folder and approve the project servers. Check the status with `/mcp`.
+4. Start Claude Code in this folder and approve the project servers. Check the status with `/mcp`.
 
-Claude Code reports an error for a server with an unset variable. The other servers still run.
+A leaked token opens all five services. Revoke it in the Infomaniak Manager if that happens.
 
 ## Preview locally
 
