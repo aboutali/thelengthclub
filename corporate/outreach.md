@@ -25,10 +25,13 @@ Das Format ist flexibel. Slot-Dauer, Anzahl der Slots und Tage legen wir gemeins
 Haben Sie in den nächsten zwei Wochen 20 Minuten für ein Gespräch? Nennen Sie mir gern einen Termin.
 
 Freundliche Grüsse
+
 [Ihr Name]
-The Length Club
-hi@length.club
-length.club
+—
+THE LENGTH CLUB
+Assisted Stretching · Zürich
+hi@length.club · length.club
+Instagram @thelengthclub
 ```
 
 ### English
@@ -47,10 +50,13 @@ The format is flexible. We agree the slot length, the number of slots and the da
 Do you have 20 minutes for a call in the next two weeks? Please suggest a time.
 
 Best regards
+
 [Your name]
-The Length Club
-hi@length.club
-length.club
+—
+THE LENGTH CLUB
+Assisted Stretching · Zürich
+hi@length.club · length.club
+Instagram @thelengthclub
 ```
 
 ---
@@ -114,10 +120,13 @@ Guten Tag [Frau/Herr] [Nachname]
 Ich habe Ihnen letzte Woche zu einem Pilot-Tag für Assisted Stretching bei [Firma] geschrieben. Ihr Postfach ist sicher voll, deshalb fasse ich mich kurz. In 20 Minuten klären wir, ob es zu Ihnen passt. Soll ich zwei Termine vorschlagen? Oder ist jemand anderes in Ihrem Team die richtige Ansprechperson?
 
 Freundliche Grüsse
+
 [Ihr Name]
-The Length Club
-hi@length.club
-length.club
+—
+THE LENGTH CLUB
+Assisted Stretching · Zürich
+hi@length.club · length.club
+Instagram @thelengthclub
 ```
 
 ### English
@@ -130,10 +139,13 @@ Hello [First name],
 Last week I wrote to you about a pilot day for assisted stretching at [Company]. Your inbox is surely full, so I keep this short. In 20 minutes we can find out whether it fits. Shall I suggest two times? Or is someone else on your team the right contact?
 
 Best regards
+
 [Your name]
-The Length Club
-hi@length.club
-length.club
+—
+THE LENGTH CLUB
+Assisted Stretching · Zürich
+hi@length.club · length.club
+Instagram @thelengthclub
 ```
 
 ---
@@ -155,10 +167,13 @@ Vielen Dank für das Gespräch. Hier die nächsten Schritte:
 Fehlt aus Ihrer Sicht etwas? Dann schreiben Sie mir kurz.
 
 Freundliche Grüsse
+
 [Ihr Name]
-The Length Club
-hi@length.club
-length.club
+—
+THE LENGTH CLUB
+Assisted Stretching · Zürich
+hi@length.club · length.club
+Instagram @thelengthclub
 ```
 
 ### English
@@ -177,10 +192,13 @@ Thank you for the call. Here are the next steps:
 If anything is missing from your side, please write me a short note.
 
 Best regards
+
 [Your name]
-The Length Club
-hi@length.club
-length.club
+—
+THE LENGTH CLUB
+Assisted Stretching · Zürich
+hi@length.club · length.club
+Instagram @thelengthclub
 ```
 
 ---
