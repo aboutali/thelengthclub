@@ -40,6 +40,35 @@ The domain is registered at Infomaniak. To connect it:
 
 3. Done — the site serves at `https://length.club` and `www.length.club` redirects to it.
 
+## Infomaniak MCP servers (Claude Code)
+
+`.mcp.json` connects Claude Code to the Infomaniak suite through the official [Infomaniak MCP servers](https://github.com/orgs/Infomaniak/repositories?q=mcp). All five servers share one Infomaniak API token. Claude Code reads the token from an environment variable. Never commit the token.
+
+| Server     | Infomaniak service | npm package                       |
+|------------|--------------------|-----------------------------------|
+| `kdrive`   | kDrive             | `@infomaniak/mcp-server-kdrive`   |
+| `mail`     | Mail               | `@infomaniak/mcp-server-mail`     |
+| `calendar` | Calendar           | `@infomaniak/mcp-server-calendar` |
+| `contact`  | Contacts           | `@infomaniak/mcp-server-contact`  |
+| `kchat`    | kChat              | `@infomaniak/mcp-server-kchat`    |
+
+Claude Code needs three environment variables:
+
+| Variable            | Value                                                        |
+|---------------------|--------------------------------------------------------------|
+| `INFOMANIAK_TOKEN`  | The API token.                                               |
+| `KDRIVE_ID`         | The number after `/drive/` in the kDrive web app URL.        |
+| `KCHAT_TEAM_NAME`   | The unique team name in the kChat URL.                       |
+
+1. Create one token in the Infomaniak Manager under **API token**.
+2. Give the token these scopes: `drive`, `workspace:mail`, `workspace:calendar`, `user_info`, `contacts`, `kchat`.
+3. Set the variables:
+   - **Local:** export them in your shell profile, e.g. `export INFOMANIAK_TOKEN=…`.
+   - **Claude Code on the web:** add them in the cloud environment settings (environment menu → Edit → environment variables).
+4. Start Claude Code in this folder and approve the project servers. Check the status with `/mcp`.
+
+A leaked token opens all five services. Revoke it in the Infomaniak Manager if that happens.
+
 ## Preview locally
 
 ```bash
@@ -54,6 +83,7 @@ index.html                   — the entire page
 css/styles.css               — styles (brand tokens as CSS custom properties)
 js/main.js                   — mobile nav, waitlist form, scroll reveal
 favicon.svg                  — TLC favicon
+.mcp.json                    — Infomaniak MCP servers for Claude Code
 .github/workflows/deploy.yml — GitHub Pages deployment
 ```
 

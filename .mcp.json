@@ -1,0 +1,46 @@
+{
+  "mcpServers": {
+    "kdrive": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@infomaniak/mcp-server-kdrive@1"],
+      "env": {
+        "KDRIVE_TOKEN": "${INFOMANIAK_TOKEN}",
+        "KDRIVE_ID": "${KDRIVE_ID}"
+      }
+    },
+    "mail": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@infomaniak/mcp-server-mail@2"],
+      "env": {
+        "MAIL_TOKEN": "${INFOMANIAK_TOKEN}"
+      }
+    },
+    "calendar": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@infomaniak/mcp-server-calendar@1"],
+      "env": {
+        "CALENDAR_TOKEN": "${INFOMANIAK_TOKEN}"
+      }
+    },
+    "contact": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@infomaniak/mcp-server-contact@1"],
+      "env": {
+        "CONTACT_TOKEN": "${INFOMANIAK_TOKEN}"
+      }
+    },
+    "kchat": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@infomaniak/mcp-server-kchat@1"],
+      "env": {
+        "KCHAT_TOKEN": "${INFOMANIAK_TOKEN}",
+        "KCHAT_TEAM_NAME": "${KCHAT_TEAM_NAME}"
+      }
+    }
+  }
+}
