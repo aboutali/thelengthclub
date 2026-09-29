@@ -40,6 +40,28 @@ The domain is registered at Infomaniak. To connect it:
 
 3. Done — the site serves at `https://length.club` and `www.length.club` redirects to it.
 
+## Infomaniak MCP servers (Claude Code)
+
+`.mcp.json` connects Claude Code to the Infomaniak suite through the official [Infomaniak MCP servers](https://github.com/orgs/Infomaniak/repositories?q=mcp). Claude Code reads the tokens from environment variables. Never commit a token.
+
+| Server     | npm package                       | Environment variables             | Token scopes                   |
+|------------|-----------------------------------|-----------------------------------|--------------------------------|
+| `kdrive`   | `@infomaniak/mcp-server-kdrive`   | `KDRIVE_TOKEN`, `KDRIVE_ID`       | `drive`                        |
+| `mail`     | `@infomaniak/mcp-server-mail`     | `MAIL_TOKEN`                      | `workspace:mail`               |
+| `calendar` | `@infomaniak/mcp-server-calendar` | `CALENDAR_TOKEN`                  | `workspace:calendar user_info` |
+| `contact`  | `@infomaniak/mcp-server-contact`  | `CONTACT_TOKEN`                   | `contacts`                     |
+| `kchat`    | `@infomaniak/mcp-server-kchat`    | `KCHAT_TOKEN`, `KCHAT_TEAM_NAME`  | `kchat`                        |
+
+1. Create one token per server in the Infomaniak Manager under **API token**. Select only the scopes from the table.
+2. Take `KDRIVE_ID` from the kDrive web app URL. It is the number after `/drive/`.
+3. Take `KCHAT_TEAM_NAME` from the kChat URL. It is the unique team name in the address.
+4. Set the variables:
+   - **Local:** export them in your shell profile, e.g. `export KDRIVE_TOKEN=…`.
+   - **Claude Code on the web:** add them in the cloud environment settings (environment menu → Edit → environment variables).
+5. Start Claude Code in this folder and approve the project servers. Check the status with `/mcp`.
+
+Claude Code reports an error for a server with an unset variable. The other servers still run.
+
 ## Preview locally
 
 ```bash
@@ -54,6 +76,7 @@ index.html                   — the entire page
 css/styles.css               — styles (brand tokens as CSS custom properties)
 js/main.js                   — mobile nav, waitlist form, scroll reveal
 favicon.svg                  — TLC favicon
+.mcp.json                    — Infomaniak MCP servers for Claude Code
 .github/workflows/deploy.yml — GitHub Pages deployment
 ```
 
