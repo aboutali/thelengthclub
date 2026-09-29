@@ -17,7 +17,7 @@ Science-led. Human touch. Made for every body.
 ↓ Be first in line
 ```
 
-**Link:** `https://length.club`
+**Link:** `https://www.length.club`
 
 ---
 
@@ -42,7 +42,7 @@ Zürich, meet The Length Club.
 
 A new assisted-stretching studio opening in 2026 — one-on-one, practitioner-led stretching that helps you move better and live better.
 
-Follow along as we build the studio. Waitlist is open at length.club (link in bio).
+Follow along as we build the studio. Waitlist is open at www.length.club (link in bio).
 ```
 
 ### Post 2 — Tagline (`02-tagline.png`)
@@ -51,7 +51,7 @@ Stretch further. Live better.
 
 Flexibility isn't a party trick. It's how you keep doing the things you love — for longer. That's the whole idea behind The Length Club.
 
-Waitlist open at length.club (link in bio).
+Waitlist open at www.length.club (link in bio).
 ```
 
 ### Post 3 — What is assisted stretching (`03-basics.png`)
@@ -93,7 +93,7 @@ We're building The Length Club right here in Zürich.
 
 Central location, easy to reach, opening 2026. Studio reveal coming soon — locals on the waitlist hear everything first.
 
-length.club (link in bio)
+www.length.club (link in bio)
 ```
 
 ### Post 8 — Membership tease (`08-membership.png`)
@@ -102,12 +102,12 @@ Founding memberships. Limited at launch.
 
 Private sessions, weekly memberships, and Duo for stretch buddies. Founding members get the best rate we will ever offer — and it's waitlist-only.
 
-length.club (link in bio)
+www.length.club (link in bio)
 ```
 
 ### Post 9 — Waitlist CTA (`09-waitlist.png`) — posted FIRST
 ```
 Be first in line.
 
-The doors open in 2026. The waitlist is open now. Join at length.club (link in bio) for founding-member pricing and the opening date before anyone else.
+The doors open in 2026. The waitlist is open now. Join at www.length.club (link in bio) for founding-member pricing and the opening date before anyone else.
 ```

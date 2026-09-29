@@ -30,7 +30,7 @@ Post in **reverse order (post 9 first, post 1 last)** so the profile grid reads 
 
 ## 4. After posting
 
-- Share each post to **Stories** with a link sticker pointing at `https://length.club`.
+- Share each post to **Stories** with a link sticker pointing at `https://www.length.club`.
 - Reply to every early comment — the algorithm rewards it, and early followers are your founding members.
 - Follow local Zürich fitness studios, physios, run clubs and gyms; engage genuinely from the brand account.
 

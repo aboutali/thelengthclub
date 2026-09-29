@@ -30,7 +30,7 @@ Freundliche Grüsse
 —
 THE LENGTH CLUB
 Assisted Stretching · Zürich
-hi@length.club · length.club
+hi@length.club · www.length.club
 Instagram @thelengthclub
 ```
 
@@ -55,7 +55,7 @@ Best regards
 —
 THE LENGTH CLUB
 Assisted Stretching · Zürich
-hi@length.club · length.club
+hi@length.club · www.length.club
 Instagram @thelengthclub
 ```
 
@@ -91,7 +91,7 @@ Haben Sie in den nächsten zwei Wochen 20 Minuten für ein Gespräch? Auf Wunsch
 
 Freundliche Grüsse
 [Ihr Name]
-The Length Club · hi@length.club · length.club
+The Length Club · hi@length.club · www.length.club
 ```
 
 **English**
@@ -104,7 +104,7 @@ Do you have 20 minutes for a call in the next two weeks? I can send a one-pager 
 
 Best regards
 [Your name]
-The Length Club · hi@length.club · length.club
+The Length Club · hi@length.club · www.length.club
 ```
 
 ---
@@ -125,7 +125,7 @@ Freundliche Grüsse
 —
 THE LENGTH CLUB
 Assisted Stretching · Zürich
-hi@length.club · length.club
+hi@length.club · www.length.club
 Instagram @thelengthclub
 ```
 
@@ -144,7 +144,7 @@ Best regards
 —
 THE LENGTH CLUB
 Assisted Stretching · Zürich
-hi@length.club · length.club
+hi@length.club · www.length.club
 Instagram @thelengthclub
 ```
 
@@ -162,7 +162,7 @@ Vielen Dank für das Gespräch. Hier die nächsten Schritte:
 
 1. Datum und Format: Wir legen gemeinsam Slot-Dauer, Anzahl der Slots und Tage fest. Bitte senden Sie mir die Tage, die für [Firma] passen.
 2. Offerte: Wir senden Ihnen eine Offerte für das vereinbarte Format.
-3. Plakat und Buchungslink: Nach Ihrer Zusage liefern wir ein Plakat mit QR-Code und den Buchungslink https://length.club/book/. Mitarbeitende fragen dort einen Slot an. Wir bestätigen jede Anfrage per E-Mail.
+3. Plakat und Buchungslink: Nach Ihrer Zusage liefern wir ein Plakat mit QR-Code und den Buchungslink www.length.club/book. Mitarbeitende fragen dort einen Slot an. Wir bestätigen jede Anfrage per E-Mail.
 
 Fehlt aus Ihrer Sicht etwas? Dann schreiben Sie mir kurz.
 
@@ -172,7 +172,7 @@ Freundliche Grüsse
 —
 THE LENGTH CLUB
 Assisted Stretching · Zürich
-hi@length.club · length.club
+hi@length.club · www.length.club
 Instagram @thelengthclub
 ```
 
@@ -187,7 +187,7 @@ Thank you for the call. Here are the next steps:
 
 1. Date and format: We agree the slot length, the number of slots and the days together. Please send me the days that suit [Company].
 2. Offer: We send you an offer for the agreed format.
-3. Poster and booking link: After you accept, we provide a poster with a QR code and the booking link https://length.club/book/. Employees request a slot there. We confirm each request by email.
+3. Poster and booking link: After you accept, we provide a poster with a QR code and the booking link www.length.club/book. Employees request a slot there. We confirm each request by email.
 
 If anything is missing from your side, please write me a short note.
 
@@ -197,7 +197,7 @@ Best regards
 —
 THE LENGTH CLUB
 Assisted Stretching · Zürich
-hi@length.club · length.club
+hi@length.club · www.length.club
 Instagram @thelengthclub
 ```
 
@@ -218,7 +218,7 @@ Du bleibst in deinen Kleidern. Wir verwenden kein Öl. Du musst nicht beweglich 
 
 Wann: [Zeit]
 Wo: [Raum]
-Slot anfragen: https://length.club/book/
+Slot anfragen: www.length.club/book
 
 Wir bestätigen deine Anfrage per E-Mail.
 Fragen? hi@length.club
@@ -235,7 +235,7 @@ You stay in your clothes. There is no oil. You do not need to be flexible.
 
 When: [Time]
 Where: [Room]
-Request a slot: https://length.club/book/
+Request a slot: www.length.club/book
 
 We confirm your request by email.
 Questions? hi@length.club
