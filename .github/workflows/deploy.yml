@@ -23,8 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v4
+      # Publish only the website files. Everything else in the repo stays off the site.
+      - name: Collect site files
+        run: |
+          mkdir _site
+          cp -r index.html favicon.svg css js book _site/
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
