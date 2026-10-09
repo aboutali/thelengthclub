@@ -18,6 +18,8 @@ Two people work on this repo at the same time, each with their own Claude Code s
 6. A push rejected as non-fast-forward means the other person pushed first. Fetch, merge, check and push again.
 7. In a conflict, keep both people's changes. Ask the user when both changed the same sentence or value.
 
+The hook `.claude/hooks/git_guard.py` enforces rules 2 and 3 for every Claude Code session. It blocks a commit on `main`, a push to `main` and every force push. Never disable, edit around or bypass this hook. If it blocks a step, follow its message.
+
 Each merge into `main` deploys the site. A newer deploy cancels a running one, so the site always shows the newest `main`.
 
 The team rules for kDrive live in the private repo `aboutali/thelengthclub-internal`.
