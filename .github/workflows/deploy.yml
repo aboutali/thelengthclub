@@ -27,7 +27,7 @@ jobs:
       - name: Collect site files
         run: |
           mkdir _site
-          cp -r index.html favicon.svg css js book _site/
+          cp -r index.html favicon.svg og-image.png css js book _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
