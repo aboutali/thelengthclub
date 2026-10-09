@@ -80,6 +80,7 @@ book/config.js               — per-company settings for the booking page
 book/book.js                 — booking page logic and DE/EN strings
 book/book.css                — booking page additions to css/styles.css
 favicon.svg                  — TLC favicon
+og-image.png                 — link preview image (source: social/facebook in the internal repo)
 .github/workflows/deploy.yml — GitHub Pages deployment
 ```
 
