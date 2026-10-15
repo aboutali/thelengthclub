@@ -1,8 +1,10 @@
 # Project notes
 
-This public repo holds the website only: `index.html`, `css`, `js`, `book`, `favicon.svg`, `og-image.png`.
+This public repo holds the website: `index.html`, `css`, `js`, `book`, `favicon.svg`, `og-image.png`. One exception, `media/`, is described below.
 
 Put internal material in the private repo `aboutali/thelengthclub-internal`: sales texts, print files, social media material, client lists, scripts and kDrive details.
+
+Exception, decided by the owner on 15 October 2026: `media/` holds finished social media images that Metricool fetches by public link. It is not a website folder: never add it to the deploy step. Only approved post images go there; their sources stay in the private repo. See `media/README.md`.
 
 When you add a new top-level website file or folder, add it to the "Collect site files" step in `.github/workflows/deploy.yml`.
 
