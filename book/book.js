@@ -1,11 +1,11 @@
-// The Length Club — pilot booking page
+// The Length Club: pilot booking page
 
 // ---- Strings (German / English) ----
 // Placeholders in {curly braces} are filled in by t().
 const STRINGS = {
   en: {
-    page_title: 'Book a stretch slot — The Length Club',
-    logo_label: 'The Length Club — home',
+    page_title: 'Book a stretch slot · The Length Club',
+    logo_label: 'The Length Club, home',
     eyebrow: 'Pilot day',
     headline: 'Stretch day at {company}',
     lead: 'Assisted stretching at your office. A practitioner stretches you on a portable table.',
@@ -39,8 +39,8 @@ const STRINGS = {
     no_slots: 'No slots are available yet. Please check back soon.',
   },
   de: {
-    page_title: 'Stretch-Slot buchen — The Length Club',
-    logo_label: 'The Length Club — Startseite',
+    page_title: 'Stretch-Slot buchen · The Length Club',
+    logo_label: 'The Length Club, Startseite',
     eyebrow: 'Pilot-Tag',
     headline: 'Stretch-Tag bei {company}',
     lead: 'Assisted Stretching in deinem Büro. Ein Stretching-Coach dehnt dich auf einer mobilen Liege.',
