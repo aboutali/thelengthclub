@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book a stretch slot — The Length Club</title>
+  <title>Request a session — The Length Club</title>
   <meta name="robots" content="noindex">
   <meta property="og:image" content="https://length.club/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -39,7 +39,7 @@
     <section class="book-intro">
       <div class="container">
         <p class="eyebrow" data-i18n="eyebrow">Pilot day</p>
-        <h1 id="book-title">Stretch day at …</h1>
+        <h1 id="book-title">Pilot day at …</h1>
         <p class="lead" data-i18n="lead">Assisted stretching at your office. A practitioner stretches you on a portable table.</p>
         <dl class="book-meta">
           <div class="book-meta-item">
@@ -51,11 +51,11 @@
             <dd id="meta-place"></dd>
           </div>
           <div class="book-meta-item">
-            <dt data-i18n="meta_length">Slot length</dt>
+            <dt data-i18n="meta_length">Session length</dt>
             <dd id="meta-length"></dd>
           </div>
         </dl>
-        <noscript><p class="form-status is-error">Please turn on JavaScript to book a slot. / Bitte aktiviere JavaScript, um einen Slot zu buchen.</p></noscript>
+        <noscript><p class="form-status is-error">Please turn on JavaScript to request a session. / Bitte aktiviere JavaScript, um eine Session anzufragen.</p></noscript>
       </div>
     </section>
 
@@ -63,8 +63,8 @@
     <section class="book-closed" id="book-closed" hidden>
       <div class="container">
         <div class="waitlist-form book-card">
-          <h2 class="book-card-title" data-i18n="closed_title">Booking is closed</h2>
-          <p data-i18n="closed_text">Booking is not open right now. Questions? Write to hi@length.club.</p>
+          <h2 class="book-card-title" data-i18n="closed_title">Session requests are closed</h2>
+          <p data-i18n="closed_text">Session requests are not open right now. Questions? Write to hi@length.club.</p>
         </div>
       </div>
     </section>
@@ -83,7 +83,7 @@
 
         <div class="waitlist-form book-card">
           <form id="booking-form" action="https://formspree.io/f/mjgnenzb" method="POST" novalidate>
-            <h2 class="book-card-title" data-i18n="form_title">Choose your slot</h2>
+            <h2 class="book-card-title" data-i18n="form_title">Choose your session</h2>
             <p class="field-error" id="err-slot" data-error-for="slot"></p>
             <div id="slot-groups"></div>
 
@@ -106,7 +106,7 @@
               <p class="field-error" id="err-ack" data-error-for="ack"></p>
               <label class="form-check">
                 <input id="bk-optin" type="checkbox" name="waitlist_optin" value="yes">
-                <span data-i18n="label_optin">Keep me updated about the studio opening.</span>
+                <span data-i18n="label_optin">Email me when the studio opens.</span>
               </label>
             </div>
 
@@ -118,9 +118,9 @@
             <input type="hidden" name="lang" id="bk-lang" value="en">
             <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-            <button class="btn btn-ink btn-full" type="submit" data-i18n="submit">Request this slot</button>
+            <button class="btn btn-ink btn-full" type="submit" data-i18n="submit">Request a session</button>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-            <p class="form-fineprint" data-i18n="privacy">We use your details only to organise the session. Your employer receives no individual data.</p>
+            <p class="form-fineprint" data-i18n="privacy">We use your details only to organize the session. Your employer receives no individual data.</p>
           </form>
 
           <div class="book-success" id="book-success" tabindex="-1" hidden>

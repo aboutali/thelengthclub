@@ -43,7 +43,7 @@ form.addEventListener('submit', async (event) => {
     });
 
     if (response.ok) {
-      form.innerHTML = '<p class="form-success">You’re on the list. Talk soon. 🧡</p>';
+      form.innerHTML = '<p class="form-success">You’re on the waitlist. We email you before we open.</p>';
     } else {
       throw new Error('Request failed');
     }
