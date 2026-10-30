@@ -73,7 +73,7 @@ python3 -m http.server 8000
 
 The page exists in English (`index.html`, `/`) and German (`de/index.html`, `/de/`). Keep both in step: a text change in one page needs the same change in the other.
 
-- German follows `marketing/TONE_OF_VOICE.md` in the internal repo: Sie, `ss` instead of `ß`, «quotes».
+- German follows `BRAND_VOICE.md` in the internal repo: du on the whole page, `ss` instead of `ß`, «quotes».
 - Both pages link each other with `hreflang`. Google then shows each searcher the page in their language.
 - `<html lang>` picks the form and menu messages in `js/main.js`.
 - The hidden form field `lang` tells you which page a waitlist entry came from.
