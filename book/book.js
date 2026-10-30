@@ -1,11 +1,11 @@
-// The Length Club — pilot booking page
+// The Length Club: pilot booking page
 
 // ---- Strings (German / English) ----
 // Placeholders in {curly braces} are filled in by t().
 const STRINGS = {
   en: {
-    page_title: 'Request a session — The Length Club',
-    logo_label: 'The Length Club — home',
+    page_title: 'Request a session · The Length Club',
+    logo_label: 'The Length Club, home',
     eyebrow: 'Pilot day',
     headline: 'Pilot day at {company}',
     lead: 'Assisted stretching at your office. A practitioner stretches you on a portable table.',
@@ -23,7 +23,7 @@ const STRINGS = {
     label_email: 'Work email',
     ph_email: 'you@company.com',
     label_ack: 'I will tell the practitioner about injuries, pregnancy or recent surgery before the session.',
-    label_optin: 'Email me when the studio opens.',
+    label_optin: 'Keep me updated about the studio opening.',
     submit: 'Request a session',
     sending: 'Sending…',
     privacy: 'We use your details only to organize the session. Your employer receives no individual data.',
@@ -33,14 +33,14 @@ const STRINGS = {
     err_ack: 'Please confirm this note.',
     error: 'Something went wrong. Please try again, or email hi@length.club.',
     success_title: 'Thanks, {name}. We received your request.',
-    success_text: 'You requested a session on {date} at {slot}. We confirm your request by email to {email}.',
+    success_text: 'You asked for {date} at {slot}. This is a session request. A confirmation email follows at {email}.',
     closed_title: 'Session requests are closed',
     closed_text: 'Session requests are not open right now. Questions? Write to hi@length.club.',
-    no_slots: 'No sessions are available yet. Please check again later.',
+    no_slots: 'No sessions are available yet. Please check back later.',
   },
   de: {
-    page_title: 'Session anfragen — The Length Club',
-    logo_label: 'The Length Club — Startseite',
+    page_title: 'Session anfragen · The Length Club',
+    logo_label: 'The Length Club, Startseite',
     eyebrow: 'Pilot-Tag',
     headline: 'Pilot-Tag bei {company}',
     lead: 'Assisted Stretching in deinem Büro. Ein Stretching-Coach dehnt dich auf einer mobilen Liege.',
@@ -68,9 +68,9 @@ const STRINGS = {
     err_ack: 'Bitte bestätige diesen Hinweis.',
     error: 'Etwas ist schiefgelaufen. Bitte versuche es erneut oder schreibe an hi@length.club.',
     success_title: 'Danke, {name}. Wir haben deine Anfrage erhalten.',
-    success_text: 'Du hast eine Session am {date} um {slot} angefragt. Wir bestätigen deine Anfrage per E-Mail an {email}.',
+    success_text: 'Du hast {date} um {slot} angefragt. Das ist eine Session-Anfrage. Eine Bestätigung folgt per E-Mail an {email}.',
     closed_title: 'Session-Anfragen sind geschlossen',
-    closed_text: 'Zurzeit sind keine Session-Anfragen möglich. Fragen? Schreibe an hi@length.club.',
+    closed_text: 'Zurzeit kannst du keine Session anfragen. Fragen? Schreibe an hi@length.club.',
     no_slots: 'Es sind noch keine Sessions verfügbar. Bitte schaue später wieder vorbei.',
   },
 };

@@ -75,6 +75,7 @@ python3 -m http.server 8000
 index.html                   — the entire page
 css/styles.css               — styles (brand tokens as CSS custom properties)
 js/main.js                   — mobile nav, waitlist form, scroll reveal
+img/                         — website photos (WebP, two widths each; credits below)
 book/index.html              — pilot booking page (/book/)
 book/config.js               — per-company settings for the booking page
 book/book.js                 — booking page logic and DE/EN strings
@@ -83,5 +84,24 @@ favicon.svg                  — TLC favicon
 og-image.png                 — link preview image (source: social/facebook in the internal repo)
 .github/workflows/deploy.yml — GitHub Pages deployment
 ```
+
+## Photo credits
+
+The website photos in `img/` come from [Unsplash](https://unsplash.com) and are free under the [Unsplash License](https://unsplash.com/license). No Unsplash+ images. The people in them are stock models, not our practitioners or clients: never caption them as such. Replace them with our own photos as soon as we have them.
+
+Each photo is cropped and exported in two widths, for example `who-run-600.webp` and `who-run-900.webp`.
+
+| File | Photographer | Source |
+|------|--------------|--------|
+| `hero-main` | Annie Spratt | https://unsplash.com/photos/oQfSHQ2Uaic |
+| `hero-small` | Vitaly Gariev | https://unsplash.com/photos/TLycVTiLFwY |
+| `session` | Performance Medicine | https://unsplash.com/photos/KCLuRlZxITU |
+| `who-desk` | Vitaly Gariev | https://unsplash.com/photos/SLx8Cz7MNBE |
+| `who-run` | Sweet Life | https://unsplash.com/photos/ob3Jmh3r3KU |
+| `who-sport` | Laura Lauch | https://unsplash.com/photos/ie1Az_w14FE |
+| `who-busy` | Vitaly Gariev | https://unsplash.com/photos/iIND9RdVU7o |
+| `who-travel` | Ged Mullen-Buick | https://unsplash.com/photos/OTELLziRE6M |
+| `who-age` | Vitaly Gariev | https://unsplash.com/photos/VpGeuzRDYAo |
+| `companies` | CoWomen | https://unsplash.com/photos/ZKHksse8tUU |
 
 **Note on fonts:** the brand font is TT Commons (commercial license). The site currently uses the free Google Font [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk) as a stand-in — swap it in `index.html` and `css/styles.css` once a TT Commons web license is available.

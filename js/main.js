@@ -1,4 +1,4 @@
-// The Length Club — pre-launch landing page
+// The Length Club: pre-launch landing page
 
 // ---- Mobile navigation ----
 const header = document.getElementById('site-header');
@@ -26,7 +26,7 @@ form.addEventListener('submit', async (event) => {
   status.classList.remove('is-error');
 
   if (form.action.includes('FORMSPREE_ID')) {
-    status.textContent = 'Form not connected yet — set your Formspree ID (see README).';
+    status.textContent = 'Form not connected yet. Set your Formspree ID (see README).';
     status.classList.add('is-error');
     return;
   }
@@ -43,7 +43,7 @@ form.addEventListener('submit', async (event) => {
     });
 
     if (response.ok) {
-      form.innerHTML = '<p class="form-success">You’re on the waitlist. We email you before we open.</p>';
+      form.innerHTML = '<p class="form-success">You’re on the waitlist. We’ll write when we have news.</p>';
     } else {
       throw new Error('Request failed');
     }
@@ -58,7 +58,8 @@ form.addEventListener('submit', async (event) => {
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 if (!prefersReducedMotion && 'IntersectionObserver' in window) {
-  const sections = document.querySelectorAll('main > section > .container');
+  // The hero stays visible from the start, so the first screen never waits.
+  const sections = document.querySelectorAll('main > section:not(.hero) > .container');
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
