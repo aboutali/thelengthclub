@@ -1,6 +1,8 @@
 # Project notes
 
-This public repo holds the website: `index.html`, `css`, `js`, `book`, `favicon.svg`, `og-image.png`. One exception, `media/`, is described below.
+This public repo holds the website: `index.html`, `de`, `css`, `js`, `img`, `book`, `favicon.svg`, `og-image.png`, `robots.txt`, `sitemap.xml`.
+
+The page exists in English (`index.html`) and German (`de/index.html`). Change both pages together. One exception, `media/`, is described below.
 
 Put internal material in the private repo `aboutali/thelengthclub-internal`: sales texts, print files, social media material, client lists, scripts and kDrive details.
 

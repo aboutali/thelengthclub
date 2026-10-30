@@ -199,6 +199,11 @@ svg { display: block; }
 
 .site-nav a:not(.btn):hover { color: var(--color-orange); }
 
+.site-nav .nav-lang {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -276,6 +281,17 @@ svg { display: block; }
 }
 
 .hero-copy h1 { margin-bottom: 1.5rem; }
+
+/* Search keyword above the slogan. It belongs to the h1 for Google. */
+.h1-kicker {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
 
 .hero-actions {
   display: flex;
