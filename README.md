@@ -69,10 +69,25 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
+## Languages and search engines
+
+The page exists in English (`index.html`, `/`) and German (`de/index.html`, `/de/`). Keep both in step: a text change in one page needs the same change in the other.
+
+- German follows `marketing/TONE_OF_VOICE.md` in the internal repo: Sie, `ss` instead of `ß`, «quotes».
+- Both pages link each other with `hreflang`. Google then shows each searcher the page in their language.
+- `<html lang>` picks the form and menu messages in `js/main.js`.
+- The hidden form field `lang` tells you which page a waitlist entry came from.
+- Each page carries structured data (JSON-LD) for Google. Add the street address there once the studio has one.
+- `sitemap.xml` lists both pages. Update `<lastmod>` after a larger text change.
+- `robots.txt` allows all crawlers and points to the sitemap.
+
 ## Structure
 
 ```
-index.html                   — the entire page
+index.html                   — the entire page (English)
+de/index.html                — the entire page (German)
+robots.txt                   — crawler rules and sitemap link
+sitemap.xml                  — page list for Google Search Console
 css/styles.css               — styles (brand tokens as CSS custom properties)
 js/main.js                   — mobile nav, waitlist form, scroll reveal
 img/                         — website photos (WebP, two widths each; credits below)

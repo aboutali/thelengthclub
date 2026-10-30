@@ -1,5 +1,25 @@
 // The Length Club: pre-launch landing page
 
+// ---- Strings (English / German) ----
+// The page language (<html lang>) picks the set. The German page is /de/.
+const STRINGS = {
+  en: {
+    openMenu: 'Open menu',
+    closeMenu: 'Close menu',
+    sending: 'Sending…',
+    success: 'You’re on the waitlist. We’ll write as soon as we have news.',
+    error: 'Something went wrong. Please try again, or email hi@length.club.',
+  },
+  de: {
+    openMenu: 'Menü öffnen',
+    closeMenu: 'Menü schliessen',
+    sending: 'Wird gesendet…',
+    success: 'Sie sind auf der Warteliste. Wir schreiben Ihnen, sobald es Neuigkeiten gibt.',
+    error: 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie an hi@length.club.',
+  },
+};
+const t = document.documentElement.lang.startsWith('de') ? STRINGS.de : STRINGS.en;
+
 // ---- Mobile navigation ----
 const header = document.getElementById('site-header');
 const navToggle = document.getElementById('nav-toggle');
@@ -7,7 +27,7 @@ const navToggle = document.getElementById('nav-toggle');
 navToggle.addEventListener('click', () => {
   const open = header.classList.toggle('nav-open');
   navToggle.setAttribute('aria-expanded', String(open));
-  navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  navToggle.setAttribute('aria-label', open ? t.closeMenu : t.openMenu);
 });
 
 document.querySelectorAll('#site-nav a').forEach((link) => {
@@ -33,7 +53,7 @@ form.addEventListener('submit', async (event) => {
 
   const button = form.querySelector('button[type="submit"]');
   button.disabled = true;
-  status.textContent = 'Sending…';
+  status.textContent = t.sending;
 
   try {
     const response = await fetch(form.action, {
@@ -43,12 +63,15 @@ form.addEventListener('submit', async (event) => {
     });
 
     if (response.ok) {
-      form.innerHTML = '<p class="form-success">You’re on the waitlist. We’ll write as soon as we have news.</p>';
+      const success = document.createElement('p');
+      success.className = 'form-success';
+      success.textContent = t.success;
+      form.replaceChildren(success);
     } else {
       throw new Error('Request failed');
     }
   } catch (error) {
-    status.textContent = 'Something went wrong. Please try again, or email hi@length.club.';
+    status.textContent = t.error;
     status.classList.add('is-error');
     button.disabled = false;
   }
