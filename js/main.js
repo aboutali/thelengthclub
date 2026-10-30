@@ -7,15 +7,15 @@ const STRINGS = {
     openMenu: 'Open menu',
     closeMenu: 'Close menu',
     sending: 'Sending…',
-    success: 'You’re on the waitlist. We’ll write as soon as we have news.',
+    success: 'You’re on the waitlist. We’ll write when we have news.',
     error: 'Something went wrong. Please try again, or email hi@length.club.',
   },
   de: {
     openMenu: 'Menü öffnen',
     closeMenu: 'Menü schliessen',
     sending: 'Wird gesendet…',
-    success: 'Sie sind auf der Warteliste. Wir schreiben Ihnen, sobald es Neuigkeiten gibt.',
-    error: 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie an hi@length.club.',
+    success: 'Du bist auf der Warteliste. Wir schreiben dir, wenn es Neuigkeiten gibt.',
+    error: 'Etwas ist schiefgelaufen. Bitte versuche es erneut oder schreib an hi@length.club.',
   },
 };
 const t = document.documentElement.lang.startsWith('de') ? STRINGS.de : STRINGS.en;
